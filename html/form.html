@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/supASM.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>SangCinema</title>
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="first">
+				<div class="logo">
+					<a href="ASM.html">
+						<div class="icon">
+							<img class="logo-img" title="trang chủ" src="../img/movie.png">
+						</div>
+						<div class="logo-text">Cinema.com</div>
+					</a>
+				</div>
+				<div class="search">
+					<input type="text" name="keyword" placeholder="Tìm: tên phim, tên diễn viên" value id="search-text">
+					<input type="submit" name="" id="submit" value="">
+				</div>
+				<div class="login-signup">
+					<input type="button" value="Đăng Nhập" name="">
+					<input type="button" value="Đăng Kí" name="">
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM MỚI</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">THỂ LOẠI</a>
+					<ul>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim viễn tưởng</a></li>
+						<li><a href="#">Phim chiến tranh</a></li>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim phiêu lưu</a><li>
+						<li><a href="#">Phim hài hước</a></li>
+						<li><a href="#">Phim võ thuật</a></li>
+						<li><a href="#">Phim kinh dị</a></li>
+						<li><a href="#">Phim hồi hộp-gây cấn</a></li>
+						<li><a href="#">Phim bí ẩn-siêu nhiên</a></li>
+						<li><a href="#">Phim cổ trang</a></li>
+						<li><a href="#">Phim thần thoại</a></li>
+						<li><a href="#">Phim tâm lý</a></li>
+						<li><a href="#">Phim tài liệu</a></li>
+						<li><a href="#">Phim hình sự</a></li>
+						<li><a href="#">Phim tình cảm-lãng mạn</a></li>
+						<li><a href="#">Phim chính kịch-Drama</a></li>
+						<li><a href="#">Phim thể thao-âm nhạc</a></li>
+						<li><a href="#">Phim gia đình</a></li>
+						<li><a href="#">Phim hoạt hình</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">QUỐC GIA</a>
+					<ul>
+						<li><a href="#">Việt Nam</a></li>
+						<li><a href="#">Trung Quốc</a></li>
+						<li><a href="#">Mỹ</a></li>
+						<li><a href="#">Hàn Quốc</a></li>
+						<li><a href="#">Nhật Bản</a></li>
+						<li><a href="#">HongKong</a></li>
+						<li><a href="#">Ấn Độ</a></li>
+						<li><a href="#">Thái Lan</a></li>
+						<li><a href="#">Pháp</a></li>
+						<li><a href="#">Đài Loan</a></li>
+						<li><a href="#">Úc</a></li>
+						<li><a href="#">Anh</a></li>
+						<li><a href="#">Canada</a></li>
+						<li><a href="#">Quốc Gia Khác</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM LẺ</a>
+					<ul>
+						<li><a href="#">Phim lẻ 2017</a></li>
+						<li><a href="#">Phim lẻ 2016</a></li>
+						<li><a href="#">Phim lẻ 2015</a></li>
+						<li><a href="#">Phim lẻ 2014</a></li>
+						<li><a href="#">Phim lẻ 2013</a></li>
+						<li><a href="#">Phim lẻ 2012</a></li>
+						<li><a href="#">Phim lẻ 2011</a></li>
+						<li><a href="#">Phim lẻ trước 2011</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM BỘ</a>
+					<ul>
+						<li><a href="#">Phim bộ Hàn Quốc</a></li>
+						<li><a href="#">Phim bộ Trung Quốc</a></li>
+						<li><a href="#">Phim bộ Đài Loan</a></li>
+						<li><a href="#">Phim bộ Mỹ</a></li>
+						<li><a href="#">Phim bộ Thái Lan</a></li>
+						<li><a href="#">Phim Bộ HongKong</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM THUYẾT MINH</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM CHIẾU RẠP</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TRAILER</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TOP 10 IMDB 2016</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="middle">
+			<div class="main-form">
+				<fieldset>
+					<legend class="first-title">Đăng ký</legend>
+					<form action="https://youtube-api-challenger.appspot.com/member/register" method="POST">
+						<div class="form-group">
+							<label>Họ và tên</label>
+							<input type="text" name="fullName" placeholder="Nhập họ và tên" class="input-long">
+						</div>
+						<div class="form-group">
+							<label>Tên tài khoản</label>
+							<input type="text" name="username" id="username" placeholder="Nhập tên tài khoản" class="input-long">
+							<span id="msgUser"></span>
+						</div>
+						<div class="form-group">
+							<label>Mật khẩu</label>
+							<input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="input-long">
+							<span id="msgPass"></span>
+						</div>
+						<div class="form-group">
+							<label>Xác nhận mật khẩu</label>
+							<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Xác nhận lại mật khẩu" class="input-long">
+							<span id="msgRePass"></span>
+						</div>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" name="email" id="email" placeholder="Ví dụ abc123@gmail.com" class="input-long">
+							<span id="msgEmail"></span>
+						</div>
+						<div class="form-group">
+							<label>Giới tính</label>
+							<label><input type="radio" name="gender" value="1" class="input-short">Nam</label>
+							<label><input type="radio" name="gender" value="0" class="input-short">Nữ</label>
+						</div>
+						<div class="form-group">
+							<label>Ngày sinh</label>
+							<input type="date" name="birthDay" class="input-long">
+						</div>
+						<div class="form-group">
+							<label>Avatar</label>
+							<input type="text" name="avatar" placeholder="Nhập link ảnh" class="input-long">
+						</div>
+						<div class="form-group1">
+							<input type="submit" name="submit" value="Hoàn thành">
+							<input type="reset" name="reset" value="Làm lại">
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			<div class="special">
+				<div class="special-group">
+					<div class="special-group-name">PHIM LẺ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="SIÊU BÃO ĐỊA CẦU">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5740/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">SIÊU BÃO ĐỊA CẦU</div>
+										<div class="special-english-name">Geostorm</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="BÁO ĐEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5815/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">BÁO ĐEN</div>
+										<div class="special-english-name">Black Panther</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="QUÁI NHÂN DEADPOOL 2">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5001/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">QUÁI NHÂN DEADPOOL 2</div>
+										<div class="special-english-name">Deadpool 2</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5112/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM</div>
+										<div class="special-english-name">Kingsman 2: The Golden Circle</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="special-group">
+					<div class="special-group-name">PHIM BỘ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="NARUTO SHIPPUDEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2297/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">NARUTO SHIPPUDEN</div>
+										<div class="special-english-name">Naruto Shippuuden</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="RUNNING MAN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2792/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">RUNNING MAN</div>
+										<div class="special-english-name">Running Man (TV Show)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="THÀNH PHỐ TỘI LỖI (PHẦN 4)">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6043/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">THÀNH PHỐ TỘI LỖI (PHẦN 4)</div>
+										<div class="special-english-name">Gotham (Season 4)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="TRÒ CHƠI VƯƠNG QUYỀN 7">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5022/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">TRÒ CHƠI VƯƠNG QUYỀN 7</div>
+										<div class="special-english-name">Game of Thrones (Season 7) </div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="bottom">
+			<div class="ban-quyen">Copyright&copy;Sangbeos</div>
+			<div class="contract">
+				<span>Contract Us:</span>
+				<a href="https://www.facebook.com/hoang.sang.99" class="fa fa-facebook" target="_blank"></a>
+				<a href="https://plus.google.com/102194390505256204860" class="fa fa-google" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UCNzjoDeDIVA5uSC6_yCYtew" class="fa fa-youtube" target="_blank"></a>
+				<a href="https://www.instagram.com/hsangg_/" class="fa fa-instagram" target="_blank"></a>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../js/form.js"></script>
+</body>
+</html>

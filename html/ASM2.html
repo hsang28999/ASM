@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/supASM.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>SangCinema</title>
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="first">
+				<div class="logo">
+					<a href="ASM.html">
+						<div class="icon">
+							<img class="logo-img" title="trang chủ" src="../img/movie.png">
+						</div>
+						<div class="logo-text">Cinema.com</div>
+					</a>
+				</div>
+				<div class="search">
+					<input type="text" name="keyword" placeholder="Tìm: tên phim, tên diễn viên" value id="search-text">
+					<input type="submit" name="" id="submit" value="">
+				</div>
+				<div class="login-signup">
+					<input type="button" value="Đăng Nhập" name="">
+					<a href="form.html"><input type="button" value="Đăng Kí" name=""></a>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM MỚI</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">THỂ LOẠI</a>
+					<ul>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim viễn tưởng</a></li>
+						<li><a href="#">Phim chiến tranh</a></li>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim phiêu lưu</a><li>
+						<li><a href="#">Phim hài hước</a></li>
+						<li><a href="#">Phim võ thuật</a></li>
+						<li><a href="#">Phim kinh dị</a></li>
+						<li><a href="#">Phim hồi hộp-gây cấn</a></li>
+						<li><a href="#">Phim bí ẩn-siêu nhiên</a></li>
+						<li><a href="#">Phim cổ trang</a></li>
+						<li><a href="#">Phim thần thoại</a></li>
+						<li><a href="#">Phim tâm lý</a></li>
+						<li><a href="#">Phim tài liệu</a></li>
+						<li><a href="#">Phim hình sự</a></li>
+						<li><a href="#">Phim tình cảm-lãng mạn</a></li>
+						<li><a href="#">Phim chính kịch-Drama</a></li>
+						<li><a href="#">Phim thể thao-âm nhạc</a></li>
+						<li><a href="#">Phim gia đình</a></li>
+						<li><a href="#">Phim hoạt hình</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">QUỐC GIA</a>
+					<ul>
+						<li><a href="#">Việt Nam</a></li>
+						<li><a href="#">Trung Quốc</a></li>
+						<li><a href="#">Mỹ</a></li>
+						<li><a href="#">Hàn Quốc</a></li>
+						<li><a href="#">Nhật Bản</a></li>
+						<li><a href="#">HongKong</a></li>
+						<li><a href="#">Ấn Độ</a></li>
+						<li><a href="#">Thái Lan</a></li>
+						<li><a href="#">Pháp</a></li>
+						<li><a href="#">Đài Loan</a></li>
+						<li><a href="#">Úc</a></li>
+						<li><a href="#">Anh</a></li>
+						<li><a href="#">Canada</a></li>
+						<li><a href="#">Quốc Gia Khác</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM LẺ</a>
+					<ul>
+						<li><a href="#">Phim lẻ 2017</a></li>
+						<li><a href="#">Phim lẻ 2016</a></li>
+						<li><a href="#">Phim lẻ 2015</a></li>
+						<li><a href="#">Phim lẻ 2014</a></li>
+						<li><a href="#">Phim lẻ 2013</a></li>
+						<li><a href="#">Phim lẻ 2012</a></li>
+						<li><a href="#">Phim lẻ 2011</a></li>
+						<li><a href="#">Phim lẻ trước 2011</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM BỘ</a>
+					<ul>
+						<li><a href="#">Phim bộ Hàn Quốc</a></li>
+						<li><a href="#">Phim bộ Trung Quốc</a></li>
+						<li><a href="#">Phim bộ Đài Loan</a></li>
+						<li><a href="#">Phim bộ Mỹ</a></li>
+						<li><a href="#">Phim bộ Thái Lan</a></li>
+						<li><a href="#">Phim Bộ HongKong</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM THUYẾT MINH</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM CHIẾU RẠP</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TRAILER</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TOP 10 IMDB 2016</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="middle">
+			<div class="address">
+				<a href="#">PHIM MỚI</a><a href="#">PHIM LẺ</a><a href="#">PHIM HÀNH ĐỘNG</a>BIỆT ĐỘI CẢM TỬ
+			</div>
+			<div class="main-web">
+				<div class="main-content">
+					<div class="img">
+						<img src="http://phimmoi.newsuncdn.com/film/3311/poster.medium.jpg">
+						<div class="plus">
+							<div class="download">
+								<a href="#"> Download</a>
+							</div>
+							<div class="trailer">
+								<a href="#"> Trailer</a>
+							</div>
+							<div class="watch">
+								<a href="#">Xem phim</a>
+							</div>
+						</div>
+					</div>
+					<div class="info">
+						<div class="name-info">
+							<div class="name">BIỆT ĐỘI CẢM TỬ</div>
+							<div class="name-english">Suicide Squad (2016)</div>
+						</div>
+						<div class="more-info">
+							<ul>
+								<li><span>Trạng thái:</span> Hoàn tất</li>
+								<li><span>Đạo diễn:</span> <a href="#">David Ayer</a></li>
+								<li><span>Quốc gia:</span> <a href="#">Mỹ</a>, <a href="#">Canada</a></li>
+								<li><span>Năm:</span> 2016</li>
+								<li><span>Ngày ra rạp:</span> 5/8/2016</li>
+								<li><span>Thời lượng:</span> 135 phút</li>
+								<li><span>Chất lượng:</span> Bản đẹp</li>
+								<li><span>Ngôn ngữ:</span> Phụ đề việt</li>
+								<li><span>Thể loại:</span> <a href="#">Phim hành động</a>, <a href="#">Phim chiếu rạp</a>, <a href="#">Phim lẻ</a></li>
+								<li><span>Lượt xem: </span>7,199,138</li>
+							</ul>
+						</div>
+					</div>
+					<div class="actor">
+						<div class="title">DIỄN VIÊN</div>
+						<ul>
+							<li>
+								<a href="#" title="Margot Robbie trong vai Dr.Harleen F.Quinzel">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/5783/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Margot Robbie</div>
+										<div class="in-film">Dr.Harleen F.Quinzel</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Cara Delevingne trong vai Enchantress">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/23680/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Cara Delevingne</div>
+										<div class="in-film">Enchantress</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Jared Leto trong vai The Joker">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/4904/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Jared Leto</div>
+										<div class="in-film">The Joker</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Ben Affleck trong vai Bruce Wayne">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/4626/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Ben Affleck</div>
+										<div class="in-film">Bruce Wayne</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Will Smith trong vai Floyd Lawton">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/1132/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Will Smith</div>
+										<div class="in-film">Floyd Lawton</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Jai Courtney trong vai Captain Bomerang">
+									<div class="img-actor"><img src="http://phimmoi.newsuncdn.com/profile/690/medium.jpg"></div>
+									<div class="info-actor">
+										<div class="name-actor">Jai Courtney</div>
+										<div class="in-film">Captain Bomerang</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="name-content">NỘI DUNG PHIM</div>
+						<div class="description">
+							<p><span>Suicide Squad</span> xoay quanh nhóm ác nhân mang tên <span>Biệt đội Cảm tử</span>. Đây là tổ chức đánh thuê gồm toàn những kẻ thù của Batman, được chính phủ tập hợp lại để chuyên thực hiện các nhiệm vụ tối mật. Điều gây tò mò nhất cho công chúng về Suicide Squad hẳn là nhân vật <span>Joker</span>.</p>
+
+	                        <p>Mọi chuyện bắt đầu từ trò đùa tai quái của Joker, khi hắn gửi tới Harley một lá thư tình rất đẹp chứa trong chiếc hộp đen cùng một con chuột-còn-sống-nhăn trong đó. Và rồi cậu ấy gửi cho Will Smith một băng đạn thật có kèm tâm thư. Hắn còn gửi cho các đồng đội một món quà dưới dạng... một con heo chết, kèm với đó là cuốn băng ghi lại lời của Leto trong hình dạng của Joker: "Mấy người, tôi không thể ở đó cùng các bạn nhưng tôi muốn mấy người biết là tôi cũng đang tập luyện vất vả y như mấy người vậy".</p>
+						</div>
+					</div>
+					<div class="keywords">
+						<div class="name-keywords">TỪ KHÓA</div>
+						<div class="all-keywords">
+							<a href="#">biệt đội cảm tử</a><a href="#">suicide squad</a><a href="#">joker</a><a href="#">batman</a><a href="#">người dơi</a><a href="#">top 10 imdb 2016</a>
+						</div>
+					</div>
+				</div>
+				<div class="film-group">
+					<div class="info-group">
+						<div class="name-group">CÓ THỂ BẠN CŨNG MUỐN XEM</div>
+					</div>
+					<div class="all-film">
+						<ul>
+							<li>
+								<a href="#" title="BIỆT ĐỘI TỬ THẦN">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2335/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">BIỆT ĐỘI TỬ THẦN</div>
+										<div class="english-name">Doom (2005)</div>
+										<div class="film-time">150 phút</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="#" title="BIỆT ĐỘI THÁM TỬ">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4630/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">BIỆT ĐỘI THÁM TỬ</div>
+										<div class="english-name">Trickster: Edogawa Ranpo (2016)</div>
+										<div class="film-time">25 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="KHÁCH SẠN HUYỀN BÍ">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/56/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">KHÁCH SẠN HUYỀN BÍ</div>
+										<div class="english-name">Hotel Transylvania (2012)</div>
+										<div class="film-time">91 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="ĐỘI ĐẶC NHIỆM SWAT">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1659/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">ĐỘI ĐẶC NHIỆM SWAT</div>
+										<div class="english-name">S.W.A.T. (2003)</div>
+										<div class="film-time">117 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="DIỀU HÂU GÃY CÁNH">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1369/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">DIỀU HÂU GÃY CÁNH</div>
+										<div class="english-name">Black Hawk Down (2001)</div>
+										<div class="film-time">144 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="SIÊU ĐẠI CHIẾN THÁI BÌNH DƯƠNG">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">SIÊU ĐẠI CHIẾN THÁI BÌNH DƯƠNG</div>
+										<div class="english-name">Pacific Rim (2013)</div>
+										<div class="film-time">119 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="ROBOT ĐẠI CHIẾN 5: CHIẾN BINH CUỐI CÙNG">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/3855/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">ROBOT ĐẠI CHIẾN 5: CHIẾN BINH CUỐI CÙNG</div>
+										<div class="english-name">Transformers 5: The Last Knight (2017)</div>
+										<div class="film-time">149 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="#" title="NGƯỜI SẮT 3">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">NGƯỜI SẮT 3</div>
+										<div class="english-name">Iron Man 3 (2013)</div>
+										<div class="film-time">190 phút</div>
+									</div>	
+								</a>
+							</li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="special">
+				<div class="special-group">
+					<div class="special-group-name">PHIM LẺ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="#" title="SIÊU BÃO ĐỊA CẦU">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5740/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">SIÊU BÃO ĐỊA CẦU</div>
+										<div class="special-english-name">Geostorm</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="BÁO ĐEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5815/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">BÁO ĐEN</div>
+										<div class="special-english-name">Black Panther</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="QUÁI NHÂN DEADPOOL 2">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5001/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">QUÁI NHÂN DEADPOOL 2</div>
+										<div class="special-english-name">Deadpool 2</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5112/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM</div>
+										<div class="special-english-name">Kingsman 2: The Golden Circle</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="special-group">
+					<div class="special-group-name">PHIM BỘ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="#" title="NARUTO SHIPPUDEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2297/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">NARUTO SHIPPUDEN</div>
+										<div class="special-english-name">Naruto Shippuuden</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="RUNNING MAN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2792/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">RUNNING MAN</div>
+										<div class="special-english-name">Running Man (TV Show)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="THÀNH PHỐ TỘI LỖI (PHẦN 4)">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6043/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">THÀNH PHỐ TỘI LỖI (PHẦN 4)</div>
+										<div class="special-english-name">Gotham (Season 4)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="TRÒ CHƠI VƯƠNG QUYỀN 7">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5022/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">TRÒ CHƠI VƯƠNG QUYỀN 7</div>
+										<div class="special-english-name">Game of Thrones (Season 7) </div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="bottom">
+			<div class="ban-quyen">Copyright&copy;Sangbeos</div>
+			<div class="contract">
+				<span>Contract Us:</span>
+				<a href="https://www.facebook.com/hoang.sang.99" class="fa fa-facebook" target="_blank"></a>
+				<a href="https://plus.google.com/102194390505256204860" class="fa fa-google" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UCNzjoDeDIVA5uSC6_yCYtew" class="fa fa-youtube" target="_blank"></a>
+				<a href="https://www.instagram.com/hsangg_/" class="fa fa-instagram" target="_blank"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

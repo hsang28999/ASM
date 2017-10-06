@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/supASM.css">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>SangCinema</title>
+</head>
+<body>
+	<header>
+		<div class="top">
+			<div class="first">
+				<div class="logo">
+					<a href="ASM.html">
+						<div class="icon">
+							<img class="logo-img" title="trang chủ" src="../img/movie.png">
+						</div>
+						<div class="logo-text">Cinema.com</div>
+					</a>
+				</div>
+				<div class="search">
+					<input type="text" name="keyword" placeholder="Tìm: tên phim, tên diễn viên" value id="search-text">
+					<input type="submit" name="" id="submit" value="">
+				</div>
+				<div class="login-signup">
+					<input type="button" value="Đăng Nhập" name="">
+					<a href="form.html"><input type="button" value="Đăng Kí" name=""></a>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM MỚI</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">THỂ LOẠI</a>
+					<ul>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim viễn tưởng</a></li>
+						<li><a href="#">Phim chiến tranh</a></li>
+						<li><a href="#">Phim hành động</a></li>
+						<li><a href="#">Phim phiêu lưu</a><li>
+						<li><a href="#">Phim hài hước</a></li>
+						<li><a href="#">Phim võ thuật</a></li>
+						<li><a href="#">Phim kinh dị</a></li>
+						<li><a href="#">Phim hồi hộp-gây cấn</a></li>
+						<li><a href="#">Phim bí ẩn-siêu nhiên</a></li>
+						<li><a href="#">Phim cổ trang</a></li>
+						<li><a href="#">Phim thần thoại</a></li>
+						<li><a href="#">Phim tâm lý</a></li>
+						<li><a href="#">Phim tài liệu</a></li>
+						<li><a href="#">Phim hình sự</a></li>
+						<li><a href="#">Phim tình cảm-lãng mạn</a></li>
+						<li><a href="#">Phim chính kịch-Drama</a></li>
+						<li><a href="#">Phim thể thao-âm nhạc</a></li>
+						<li><a href="#">Phim gia đình</a></li>
+						<li><a href="#">Phim hoạt hình</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">QUỐC GIA</a>
+					<ul>
+						<li><a href="#">Việt Nam</a></li>
+						<li><a href="#">Trung Quốc</a></li>
+						<li><a href="#">Mỹ</a></li>
+						<li><a href="#">Hàn Quốc</a></li>
+						<li><a href="#">Nhật Bản</a></li>
+						<li><a href="#">HongKong</a></li>
+						<li><a href="#">Ấn Độ</a></li>
+						<li><a href="#">Thái Lan</a></li>
+						<li><a href="#">Pháp</a></li>
+						<li><a href="#">Đài Loan</a></li>
+						<li><a href="#">Úc</a></li>
+						<li><a href="#">Anh</a></li>
+						<li><a href="#">Canada</a></li>
+						<li><a href="#">Quốc Gia Khác</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM LẺ</a>
+					<ul>
+						<li><a href="#">Phim lẻ 2017</a></li>
+						<li><a href="#">Phim lẻ 2016</a></li>
+						<li><a href="#">Phim lẻ 2015</a></li>
+						<li><a href="#">Phim lẻ 2014</a></li>
+						<li><a href="#">Phim lẻ 2013</a></li>
+						<li><a href="#">Phim lẻ 2012</a></li>
+						<li><a href="#">Phim lẻ 2011</a></li>
+						<li><a href="#">Phim lẻ trước 2011</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM BỘ</a>
+					<ul>
+						<li><a href="#">Phim bộ Hàn Quốc</a></li>
+						<li><a href="#">Phim bộ Trung Quốc</a></li>
+						<li><a href="#">Phim bộ Đài Loan</a></li>
+						<li><a href="#">Phim bộ Mỹ</a></li>
+						<li><a href="#">Phim bộ Thái Lan</a></li>
+						<li><a href="#">Phim Bộ HongKong</a></li>
+					</ul>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM THUYẾT MINH</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">PHIM CHIẾU RẠP</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TRAILER</a>
+				</div>
+				<div class="menu-box">
+					<a class="name-box" href="#">TOP 10 IMDB 2016</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="middle">
+			<div class="main">
+				<div class="group-film">
+					<div class="info-group">
+						<div class="group-name">PHIM CHIẾU RẠP MỚI</div>
+						<div class="more-film"><a href="#"> Xem Thêm</a></div>
+					</div>
+					<div class="all-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="KẺ TRỘM MẶT TRĂNG 3">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4683/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">KẺ TRỘM MẶT TRĂNG 3</div>
+										<div class="english-name">Despicable Me 3</div>
+										<div class="film-time">90 phút</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="LỜI NGUYỀN CỦA RỒNG CHÚA">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6029/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">LỜI NGUYỀN CỦA RỒNG CHÚA</div>
+										<div class="english-name">The Dragon Spell</div>
+										<div class="film-time">85 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="CHIẾN TRƯỜNG BUSHWICK">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5988/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">CHIẾN TRƯỜNG BUSHWICK</div>
+										<div class="english-name">Bushwick</div>
+										<div class="film-time">94 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="TÒA THÁP BÓNG ĐÊM">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5781/poster.medium.jpg" >
+									</div>
+									<div class="film-info">
+										<div class="film-name">TÒA THÁP BÓNG ĐÊM</div>
+										<div class="english-name">The Dark Tower</div>
+										<div class="film-time">95 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="SWORD ART ONLINE: THẾ GIỚI HƯ ẢO">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6018/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">SWORD ART ONLINE: THẾ GIỚI HƯ ẢO</div>
+										<div class="english-name">Sword Art Online The Movie: Ordinal Scale</div>
+										<div class="film-time">119 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="BÚP BÊ MA ÁM 2: TẠO VẬT QUỶ DỮ">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5518/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">BÚP BÊ MA ÁM 2: TẠO VẬT QUỶ DỮ</div>
+										<div class="english-name">Annabelle 2: Creation</div>
+										<div class="film-time">109 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="ĐẢO ĐỊA NGỤC">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5347/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">ĐẢO ĐỊA NGỤC</div>
+										<div class="english-name">The Battleship Island</div>
+										<div class="film-time">132 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="XIN LỖI ANH CHỈ LÀ SÁT THỦ">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4603/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">XIN LỖI ANH CHỈ LÀ SÁT THỦ</div>
+										<div class="english-name">Luck-Key</div>
+										<div class="film-time">112 phút</div>
+									</div>	
+								</a>
+							</li>		
+						</ul>
+					</div>
+				</div>
+				<div class="group-film">
+					<div class="info-group">
+						<div class="group-name">PHIM LẺ MỚI</div>
+						<div class="more-film"><a href="#"> Xem Thêm</a></div>
+					</div>
+					<div class="all-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="CUỘC CHIẾN PHỤ HUYNH">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6031/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">CUỘC CHIẾN PHỤ HUYNH</div>
+										<div class="english-name">Hindi Medium</div>
+										<div class="film-time">132 phút</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="MỘT CÂU CHUYỆN MA">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6026/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">MỘT CÂU CHUYỆN MA</div>
+										<div class="english-name">A Ghost Story</div>
+										<div class="film-time">92 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="TÒA THÁP BÓNG ĐÊM">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5781/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">TÒA THÁP BÓNG ĐÊM</div>
+										<div class="english-name">The Dark Tower</div>
+										<div class="film-time">95 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="CHIẾN TRƯỜNG BUSHWICK">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5988/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">CHIẾN TRƯỜNG BUSHWICK</div>
+										<div class="english-name">Bushwick</div>
+										<div class="film-time">94 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="PHI THIÊN VŨ: TRÁI TIM DƯỚI LƯỠI KIẾM">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6016/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">PHI THIÊN VŨ: TRÁI TIM DƯỚI LƯỠI KIẾM</div>
+										<div class="english-name">Shinobi: Heart Under Blade</div>
+										<div class="film-time">107 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="YÊU">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6014/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">YÊU</div>
+										<div class="english-name">Loving</div>
+										<div class="film-time">123 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="SWORD ART ONLINE: RANH GIỚI HƯ ẢO">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6018/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">SWORD ART ONLINE: RANH GIỚI HƯ ẢO</div>
+										<div class="english-name">Sword Art Online The Movie: Ordinal Scale</div>
+										<div class="film-time">119 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="MYTHICA: KẺ SÁT THẦN">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6017/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">MYTHICA: KẺ SÁT THẦN</div>
+										<div class="english-name">Mythica: The Godslayer</div>
+										<div class="film-time">118 phút</div>
+									</div>	
+								</a>
+							</li>		
+						</ul>
+					</div>
+				</div>
+				<div class="group-film">
+					<div class="info-group">
+						<div class="group-name">PHIM BỘ MỚI </div>
+						<div class="more-film"><a href="#"> Xem Thêm</a></div>
+					</div>
+					<div class="all-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="THẾ GIỚI HỢP NHẤT">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5706/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THẾ GIỚI HỢP NHẤT</div>
+										<div class="english-name">Reunited Worlds</div>
+										<div class="film-time">30 phút/tập</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="HÀNH VI PHẠM TỘI">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5707/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">HÀNH VI PHẠM TỘI</div>
+										<div class="english-name">Criminal Minds</div>
+										<div class="film-time">60 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="THÀNH PHỐ TỘI PHẠM">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1645/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THÀNH PHỐ TỘI PHẠM</div>
+										<div class="english-name">Gotham</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="TIA CHỚP">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1403/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">TIA CHỚP</div>
+										<div class="english-name">Flash</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="THIS IS US">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4194/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THIS IS US</div>
+										<div class="english-name">Chính chúng ta</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="CHÚA TỂ BÓNG TỐI">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4132/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">CHÚA TỂ BÓNG TỐI</div>
+										<div class="english-name">Lucifer</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="THUNG LŨNG SILICON">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5235/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THUNG LŨNG SILICON</div>
+										<div class="english-name">Silicon Valley</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="TẬP LÀM NGƯỜI XẤU">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1077/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">TẬP LÀM NGƯỜI XẤU</div>
+										<div class="english-name">Breaking Bad</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="HÃY GỌI CHO SAUL">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2385/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">HÃY GỌI CHO SAUL</div>
+										<div class="english-name">Better Call Saul</div>
+										<div class="film-time">45 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="THÁM TỬ SHERLOCK HOMES">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4651/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THÁM TỬ SHERLOCK HOMES</div>
+										<div class="english-name">Sherlock</div>
+										<div class="film-time">60 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="GÃ MỤC SƯ TỘI LỖI">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/3924/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">GÃ MỤC SƯ TỘI LỖI</div>
+										<div class="english-name">Preacher</div>
+										<div class="film-time">60 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="XÁC SỐNG">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/236/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">XÁC SỐNG</div>
+										<div class="english-name">The Walking Dead</div>
+										<div class="film-time">60 phút/tập</div>
+									</div>	
+								</a>
+							</li>			
+						</ul>
+					</div>
+				</div>
+				<div class="group-film">
+					<div class="info-group">
+						<div class="group-name">PHIM HOẠT HÌNH</div>
+						<div class="more-film"><a href="#"> Xem Thêm</a></div>
+					</div>
+					<div class="all-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="GIẢ KIM THUẬT SƯ">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4206/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">GIẢ KIM THUẬT SƯ</div>
+										<div class="english-name">Fullmetal Alchemist Brotherhood</div>
+										<div class="film-time">30 phút/tập</div>
+									</div>	
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="ĐẢO HẢI TẶC">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/665/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">ĐẢO HẢI TẶC</div>
+										<div class="english-name">One Piece</div>
+										<div class="film-time">25 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="SỨ MỆNH THẦN CHẾT">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4175/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">SỨ MỆNH THẦN CHẾT</div>
+										<div class="english-name">Bleach</div>
+										<div class="film-time">25 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="ĐẠI CHIẾN TITAN">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2636/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">ĐẠI CHIẾN TITAN</div>
+										<div class="english-name">Attack On Titan</div>
+										<div class="film-time">40 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="BẢY VIÊN NGỌC RỒNG">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/1369/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">BẢY VIÊN NGỌC RỒNG</div>
+										<div class="english-name">Dragon Ball</div>
+										<div class="film-time">25 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="NARUTO">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2296/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">NARUTO</div>
+										<div class="english-name">Naruto</div>
+										<div class="film-time">25 phút/tập</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="KẺ TRỘM MẶT TRĂNG 3">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/4683/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">KẺ TRỘM MẶT TRĂNG 3</div>
+										<div class="english-name">Despicable Me 3</div>
+										<div class="film-time">90 phút</div>
+									</div>	
+								</a>
+							</li>	
+							<li>
+								<a href="ASM2.html" title="THÁM TỬ LỪNG DANH CONAN">
+									<div class="film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/162/poster.medium.jpg">
+									</div>
+									<div class="film-info">
+										<div class="film-name">THÁM TỬ LỪNG DANH CONAN</div>
+										<div class="english-name">Detective Conan</div>
+										<div class="film-time">30 phút/tập</div>
+									</div>	
+								</a>
+							</li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="special">
+				<div class="special-group">
+					<div class="special-group-name">PHIM LẺ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="SIÊU BÃO ĐỊA CẦU">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5740/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">SIÊU BÃO ĐỊA CẦU</div>
+										<div class="special-english-name">Geostorm</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="BÁO ĐEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5815/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">BÁO ĐEN</div>
+										<div class="special-english-name">Black Panther</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="QUÁI NHÂN DEADPOOL 2">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5001/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">QUÁI NHÂN DEADPOOL 2</div>
+										<div class="special-english-name">Deadpool 2</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5112/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">MẬT VỤ KINGSMAN 2: TỔ CHỨC HOÀNG KIM</div>
+										<div class="special-english-name">Kingsman 2: The Golden Circle</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="special-group">
+					<div class="special-group-name">PHIM BỘ HOT TRONG TUẦN</div>
+					<div class="all-special-film">
+						<ul>
+							<li>
+								<a href="ASM2.html" title="NARUTO SHIPPUDEN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2297/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">NARUTO SHIPPUDEN</div>
+										<div class="special-english-name">Naruto Shippuuden</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="RUNNING MAN">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/2792/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">RUNNING MAN</div>
+										<div class="special-english-name">Running Man (TV Show)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="THÀNH PHỐ TỘI LỖI (PHẦN 4)">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/6043/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">THÀNH PHỐ TỘI LỖI (PHẦN 4)</div>
+										<div class="special-english-name">Gotham (Season 4)</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="ASM2.html" title="TRÒ CHƠI VƯƠNG QUYỀN 7">
+									<div class="special-film-img">
+										<img src="http://phimmoi.newsuncdn.com/film/5022/poster.medium.jpg">
+									</div>
+									<div class="special-film-info">
+										<div class="special-film-name">TRÒ CHƠI VƯƠNG QUYỀN 7</div>
+										<div class="special-english-name">Game of Thrones (Season 7) </div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<footer>
+		<div class="bottom">
+			<div class="ban-quyen">Copyright&copy;Sangbeos</div>
+			<div class="contract">
+				<span>Contract Us:</span>
+				<a href="https://www.facebook.com/hoang.sang.99" class="fa fa-facebook" target="_blank"></a>
+				<a href="https://plus.google.com/102194390505256204860" class="fa fa-google" target="_blank"></a>
+				<a href="https://www.youtube.com/channel/UCNzjoDeDIVA5uSC6_yCYtew" class="fa fa-youtube" target="_blank"></a>
+				<a href="https://www.instagram.com/hsangg_/" class="fa fa-instagram" target="_blank"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
